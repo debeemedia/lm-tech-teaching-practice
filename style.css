@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: silver;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #564903;
+    padding: 3px 10px;
+}
+
+body {
+    background-color: rgb(59, 150, 203);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.door {
+    background-color: silver;
+    height: 700px;
+    width: 350px;
+    margin: auto;
+    border: 3px outset silver;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.top {
+    height: 60%;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.top-style {
+    height: 100%;
+    width: 50%;
+    border: 10px ridge silver;
+}
+
+.handle {
+    background-color: #564903;
+    height: 75px;
+    width: 35px;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    z-index: 1;
+}
+
+.handle-extension {
+    width: 65px;
+    height: 12px;
+    background-color: #564903;
+    position: absolute;
+    top: 40%;
+    left: -40px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: outset #564903;
+}
+
+.handle-extension:active {
+    top: 43%;
+    transform: rotate(-15deg);
+}
+
+.latch {
+    width: 45px;
+    height: 15px;
+    background-color: silver;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: groove silver;
+    position: absolute;
+    right: 0;
+}
+
+.latch:active {
+    transform: translateX(5px);
+}
+
+.latch-top {
+    top: 0;
+}
+
+.latch-bottom {
+    top: 58%;
+}
+
+.bottom {
+    height: 40%;
+    width: 75%;
+    border: 10px ridge silver;
+    margin: 25px auto 0;
+}
