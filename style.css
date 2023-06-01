@@ -10,6 +10,7 @@ h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #564903;
     padding: 3px 10px;
+    font-size: 16px;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
     height: 700px;
     width: 350px;
     margin: auto;
-    border: 3px outset silver;
+    border: 3px outset #dcddda;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -46,7 +47,7 @@ body {
 .top-style {
     height: 100%;
     width: 50%;
-    border: 10px ridge silver;
+    border: 10px inset #dcddda;
 }
 
 .handle {
@@ -54,9 +55,12 @@ body {
     height: 75px;
     width: 35px;
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 35%;
     z-index: 1;
+    cursor: pointer;
+    border-radius: 15px;
+    border: outset #564903;
 }
 
 .handle-extension {
@@ -83,7 +87,7 @@ body {
     background-color: silver;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border: groove silver;
+    border: groove #dcddda;
     position: absolute;
     right: 0;
     cursor: pointer;
@@ -104,6 +108,6 @@ body {
 .bottom {
     height: 40%;
     width: 75%;
-    border: 10px ridge silver;
+    border: 10px inset #dcddda;
     margin: 25px auto 0;
 }
