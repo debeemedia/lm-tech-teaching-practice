@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-    background-color: rgb(59, 150, 203);
+    background-color: #3b96cb;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    box-shadow: -3px 1px 0px 2px darkgray;
 }
 
 .top {
@@ -68,6 +69,7 @@ body {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     border: outset #564903;
+    cursor: pointer;
 }
 
 .handle-extension:active {
@@ -84,6 +86,7 @@ body {
     border: groove silver;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 
 .latch:active {
